@@ -10,7 +10,9 @@
 </head>
 
 <body>
-<h1>PHP Snacks B1</h1>
+<header>
+   <h1>PHP Snacks B1</h1>
+</header>
 
 <!-- snack 1 -->
 <h2>Snack 1</h2>
