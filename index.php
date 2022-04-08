@@ -27,7 +27,7 @@
 </form>
 
 <h2>Sanck 4</h2>
-<p></p>
+<ul><?= $numList ?></ul>
 
 <h2>snack 5</h2>
 <p></p>

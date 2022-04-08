@@ -77,6 +77,26 @@ if (isset($_GET['name']) && isset($_GET['email']) && isset($_GET['age'])) {
 
 
 
+/*
+- SNACK 4 -
+Creare un array con 15 numeri casuali, tenendo conto che l’array non dovrà contenere lo stesso numero più di una volta.
+*/
 
+$arrNum = [];
+$numList = '';
+$rNum = null;
+
+for ($x=0; $x < 15; $x++) {
+   
+   $rNum = rand(1, 20);
+
+   while (in_array($rNum, $arrNum)) {
+      $rNum = rand(1, 20);
+   };
+
+   $arrNum[] = $rNum;
+
+   $numList .= "<li>$arrNum[$x]</li>";
+}
 
 ?>
