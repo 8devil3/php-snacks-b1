@@ -111,7 +111,7 @@ $arrP = explode('.', $p);
 
 $newP = '';
 
-for ($p=0; $p < count($arrP); $p++) { 
+for ($p=0; $p < count($arrP) - 1; $p++) { 
    $newP .= "<p>$arrP[$p].</p>";
 }
 
