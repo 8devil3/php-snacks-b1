@@ -12,11 +12,14 @@
 <body>
 <h1>PHP Snacks B1</h1>
 
+<!-- snack 1 -->
 <h2>Snack 1</h2>
 <ul>
    <?= $partite ?>
 </ul>
+<!-- / -->
 
+<!-- snack 2 -->
 <h2>Snack 2</h2>
 <form action="" method="GET" name="access">
    <input type="text" name="name" placeholder="Nome">
@@ -25,12 +28,17 @@
    <button>invia</button>
    <?= $strAccess ?>
 </form>
+<!-- / -->
 
+<!-- snack 4 -->
 <h2>Sanck 4</h2>
 <ul><?= $numList ?></ul>
+<!-- / -->
 
-<h2>snack 5</h2>
-<p></p>
-   
+<!-- snack 5 -->
+<h2>Snack 5</h2>
+<?= $newP ?>
+<!-- / -->
+
 </body>
 </html>
