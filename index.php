@@ -13,7 +13,10 @@
 
 <body>
 <header>
-   <h1>PHP Snacks B1</h1>
+   <div class="h-container">
+      <img src="./img/logo_8devil" alt="8devil">
+      <h1>PHP Snacks B1</h1>
+   </div>
 </header>
 
 <main>

@@ -32,6 +32,17 @@ header{
    right: 0;
 }
 
+.h-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+img {
+   height: 3rem;
+   margin-right: 2rem;
+}
+
 .container {
    margin: 140px auto 4rem auto;
    max-width: var(--max-width);
