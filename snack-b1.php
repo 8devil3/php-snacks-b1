@@ -70,9 +70,9 @@ if (isset($_GET['name']) && isset($_GET['email']) && isset($_GET['age'])) {
          strpos($email, '.') && 
          is_numeric($age)
       ) {
-      $strAccess = "<p>Accesso riuscito</p>";
+      $strAccess = "<p class=\"true\">Accesso riuscito</p>";
    } else {
-      $strAccess = "<p>Accesso negato</p>";
+      $strAccess = "<p class=\"false\">Accesso negato</p>";
    }
 }
 
