@@ -89,9 +89,9 @@ Creare un array con 15 numeri casuali, tenendo conto che l’array non dovrà co
 $arrNum = [];
 $numList = '';
 $rNum = null;
-$max_ran = 15;
+$max_ran = 150;
 
-for ($x=0; $x < $max_ran; $x++) {
+for ($x=0; $x < 15; $x++) {
    
    $rNum = rand(1, $max_ran);
 
