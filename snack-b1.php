@@ -58,6 +58,9 @@ Passare come parametri GET name, mail e age e verificare (cercando i metodi che 
 
 $strAccess = '';
 
+// il primo "if" è possibile abbreviarlo con la forma $name = $_GET['name'] ?? '';
+//il doppio punto interrogativo è un'abbreviazione di isset() e se è vero, utilizza il valore impostato, altrimenti utilizza stringa vuota ('').
+
 if (isset($_GET['name']) && isset($_GET['email']) && isset($_GET['age'])) {
    $name = $_GET['name'];
    $email = $_GET['email'];
@@ -66,8 +69,8 @@ if (isset($_GET['name']) && isset($_GET['email']) && isset($_GET['age'])) {
    if (
          is_string($name) && 
          strlen($name) > 3 && 
-         strpos($email, '@') && 
-         strpos($email, '.') && 
+         strpos($email, '@') !== false && 
+         strpos($email, '.') !== false && 
          is_numeric($age)
       ) {
       $strAccess = "<p class=\"true\">Accesso riuscito</p>";
@@ -86,13 +89,14 @@ Creare un array con 15 numeri casuali, tenendo conto che l’array non dovrà co
 $arrNum = [];
 $numList = '';
 $rNum = null;
+$max_ran = 15;
 
-for ($x=0; $x < 15; $x++) {
+for ($x=0; $x < $max_ran; $x++) {
    
-   $rNum = rand(1, 15);
+   $rNum = rand(1, $max_ran);
 
    while (in_array($rNum, $arrNum)) {
-      $rNum = rand(1, 20);
+      $rNum = rand(1, $max_ran);
    };
 
    $arrNum[] = $rNum;
